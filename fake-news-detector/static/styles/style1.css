@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero-bg{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Newspaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4em;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    margin-left: 18%;
+}
+.header a{
+    text-decoration: none;
+    color: white
+}
+.alert{
+    padding: 2em 0;
+    background-color: white;
+    border-radius: 1em;
+    margin: 0 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+p span{
+    font-weight: bold;
+    font-size: 3vw;
+}
+.sources{
+    text-align: left;
+}
+
+.sources p{
+    font-size: 1.8vw;
+    margin-left: 10%;
+}
+ ul{
+     font-size: 1.2vw;
+     margin-left: 10%;
+ }

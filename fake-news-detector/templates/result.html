@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style1.css') }}">
+</head>
+<body>
+    <div class="hero-bg">
+        <div class="header">
+            <p><a href="{{ url_for('index') }}">Fake News Detector</a></p>
+        </div>
+        
+        <div class="alert">
+            {% if flag %}
+                <p><span style="color: rgb(35, 196, 35);">True!</span></p>
+                <div class="sources">
+                    <p>Sources:</p>
+                    <ul>
+                        {% for item in sources %}
+                            <li><a href=" http://{{ item }}"  target="_blank">{{ item }}</a></li>
+                        
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% else %}
+                <p><span style="color: red;">False!</span></p>
+            {% endif %}
+
+        </div>
+    </div>
+   <!-- {% if flag %}
+        <h1>True!</h1>
+        <h1>Sources</h1>
+        <ul>
+
+            {% for item in sources %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}-->
+</body>
+</html>

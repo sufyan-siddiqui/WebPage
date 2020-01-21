@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    <div class="hero-bg">
+        <div class="header">
+            <p><a href="{{ url_for('index') }}">Fake News Detector</a></p>
+        </div>
+        
+        <div class="form">
+            <form action="{{ url_for('result') }}" method="POST" id="form-news">
+                <div>
+                    <label for="news-text">Type your News Here</label>
+                    <input type="text"  name="url" id="url">
+                    <input type="text" name="title" id="title">
+                    <textarea name="news-text" form="form-news" id="description" cols="30" rows="10"></textarea>
+                    <button>Check!</button>  
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

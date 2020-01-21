@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero-bg{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Newspaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* position: relative; */
+}
+
+.header{
+    display: flex;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    margin-left: 24%;
+}
+.header a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+form{
+    padding: 2em 0;
+    background-color: white;
+    border-radius: 1em;
+    margin: 0 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size:2.2vw;
+    padding: .5em 0;
+}
+textarea{
+    display: box;
+    width: 80%; 
+    height: 5vw;
+    padding: .5em;
+    margin: .5em 0;
+    /* margin-left: -1em; */
+    border-radius: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+button{
+    background-color: teal;
+    border: none;
+    width: 20%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+button:active{
+    background-color: rgb(3, 92, 92);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
